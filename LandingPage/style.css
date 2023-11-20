@@ -1,0 +1,146 @@
+.macbook-pro {
+  background-color: #f8de54;
+  height: 982px;
+  position: relative;
+  width: 1512px;
+}
+
+.macbook-pro .overlap {
+  height: 200px;
+  left: 68px;
+  position: absolute;
+  top: 116px;
+  width: 779px;
+}
+
+.macbook-pro .welcome-to-pykidz-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.macbook-pro .text-wrapper-2 {
+  color: #000000;
+  font-family: "Irish Grover-Regular", Helvetica;
+  font-size: 50px;
+  font-weight: 400;
+  height: 120px;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 100px;
+  position: absolute;
+  top: 80px;
+  white-space: nowrap;
+  width: 688px;
+}
+
+.macbook-pro .overlap-group {
+  background-color: #f95a6d;
+  height: 509px;
+  left: 78px;
+  position: absolute;
+  top: 352px;
+  width: 419px;
+}
+
+.macbook-pro .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Irish Grover-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  height: 70px;
+  left: 26px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 103px;
+  width: 367px;
+}
+
+.macbook-pro .p {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  height: 245px;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 194px;
+  width: 354px;
+}
+
+.macbook-pro .overlap-2 {
+  background-color: #80d458;
+  height: 509px;
+  left: 553px;
+  position: absolute;
+  top: 352px;
+  width: 407px;
+}
+
+.macbook-pro .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Irish Grover-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  height: 70px;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 90px;
+  width: 367px;
+}
+
+.macbook-pro .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  height: 245px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 206px;
+  width: 365px;
+}
+
+.macbook-pro .overlap-3 {
+  background-color: #cb82f8;
+  height: 509px;
+  left: 1026px;
+  position: absolute;
+  top: 352px;
+  width: 407px;
+}
+
+.macbook-pro .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Irish Grover-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  height: 70px;
+  left: 33px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 89px;
+  width: 367px;
+}
+
+.macbook-pro .parents-can-monitor {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  height: 339px;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 155px;
+  width: 379px;
+}
