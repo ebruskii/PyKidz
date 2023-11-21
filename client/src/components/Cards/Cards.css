@@ -1,0 +1,91 @@
+h2 {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-right: 2vh;
+  margin-left: 2vh;
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  overflow: hidden; /* Ensures the pseudo-element does not extend outside the container */
+  margin-bottom: 1%;
+}
+
+.card-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Set this to the percentage you want */
+  height: 50%;
+  background-color: #ecf0f9; /* Your background color */
+  z-index: -1; /* Place it behind the content */
+  border-radius: 5px;
+}
+
+.card {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#card-a {
+  background-color: #ef6360;
+}
+#card-b {
+  background-color: #7de6ff;
+}
+#card-c {
+  background-color: #7dce6d;
+}
+
+.backlogo {
+  font-size: 5rem;
+  opacity: 0.1;
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.card {
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.card button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #f0f0f0;
+}
