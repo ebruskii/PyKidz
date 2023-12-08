@@ -1,0 +1,27 @@
+.kids-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffcc00; /* Bubble color */
+}
+
+.bubble1 {
+  width: 50px;
+  height: 50px;
+  top: 20%;
+  left: 10%;
+}
+
+.bubble2 {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 30%;
+}
+
+/* Add more bubble styles as needed */

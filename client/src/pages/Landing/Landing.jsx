@@ -5,10 +5,11 @@ import Hero from "../../components/Hero/Hero";
 import Cards from "../../components/Cards/Cards";
 import { Text } from "@chakra-ui/react";
 
+// #FBFCFA, FCFBFC
 const Landing = () => {
   return (
     <>
-      <div style={{ zIndex: -2, backgroundColor: "#FAE6B4" }}>
+      <div style={{ zIndex: -2, backgroundColor: "#FCFFFF" }}>
         <Navbar />
         <Hero />
       </div>

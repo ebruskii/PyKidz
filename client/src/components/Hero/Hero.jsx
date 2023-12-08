@@ -20,6 +20,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
   const navigate = useNavigate();
+
   return (
     <div>
       <Container maxW={"7xl"} height={"60vh"}>
@@ -77,11 +78,12 @@ export default function Hero() {
                 bg={"#EF6360"}
                 _hover={{ bg: "red.300" }}
                 onClick={() => {
-                  navigate("/lessons");
+                  navigate("/lesson1");
                 }}
               >
                 Get started
               </Button>
+
               <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
                 How It Works
               </Button>

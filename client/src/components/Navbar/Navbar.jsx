@@ -15,7 +15,8 @@ import {
   MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack
+  Stack,
+  useBreakpointValue
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
@@ -41,7 +42,12 @@ const NavLink = ({ link }) => {
         </MenuButton>
         <MenuList>
           {link.sublinks.map((sublink) => (
-            <MenuItem as="a" key={sublink.title} href={sublink.location}>
+             <MenuItem
+             as="a"
+             key={sublink.title}
+             href={sublink.location}
+             _hover={{ bg: "rgba(255, 255, 255, 0.1)" }} // Adjust the alpha value as needed
+           >
               {sublink.title}
             </MenuItem>
           ))}
@@ -58,13 +64,16 @@ const NavLink = ({ link }) => {
         fontWeight={500}
         fontSize={"lg"}
         borderBottom={
-          location.pathname === link.location ? "3px solid" : "0px"
+          link.location === "/" 
+            ? "3px solid #EF6360"  // Red underline for Home button when on the home page
+            : "1px solid transparent"  // Border for non-Home buttons
         }
         style={{ transition: "margin 0.2s ease-in-out",
-                 background: "transparent", }
+                 background: "transparent", marginRight: "8px", }
       }
         _hover={{
           textDecoration: "none",
+          borderBottom: link.location === "/" ? "3px solid #EF6360" : "1px solid #EF6360", // Adjust color as needed
           marginTop: -2,
         }}
         href={link.location}
@@ -78,18 +87,35 @@ const NavLink = ({ link }) => {
 
 
 export default function Navbar() {
+  const location = useLocation();
+  const displayNav = useBreakpointValue({ base: "none", md: "flex" });
+
   return (
     <>
       <Box px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex 
+          h={16} 
+          alignItems={"center"} 
+          justifyContent={"space-between"}
+          flexWrap="wrap" //wraps to next line
+          >
           <HStack spacing={8} alignItems={"center"}>
             <img style={{ width: "50%" }} src={PyKidz} alt="logo" />
           </HStack>
-          <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            {Links.map((link) => (
-              <NavLink key={link.title} link={link} />
-            ))}
-          </HStack>
+          
+          {displayNav && (
+            <Flex
+              as="nav"
+              justify="center"  // Center the navigation links
+              align="center"
+              flexWrap="wrap"
+              mt={{ base: 4, md: 0 }}  // Add top margin on smaller screens
+            >
+              {Links.map((link) => (
+                <NavLink key={link.title} link={link} />
+              ))}
+            </Flex>
+            )}
         </Flex>
       </Box>
     </>
