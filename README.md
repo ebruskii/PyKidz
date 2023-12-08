@@ -7,3 +7,5 @@ Our term project is called PyKidz, where our group will be creating a website th
 
 https://www.figma.com/file/8WAtWboYb79Kl9nib2fd7U/Untitled?type=design&node-id=0%3A1&mode=design&t=CzlMI58pMlq15Y04-1
 this is a figma design link!!
+
+(The final version of our website is under the branch, "Ev".
