@@ -12,4 +12,6 @@ https://www.canva.com/design/DAF2HpWmAtw/e_jNWRZLWetDs09uioPT8Q/edit?utm_content
 ^^ The Canva slides
 
 (All final code was pushed to branch, "Ev")
+Final Walkthrough Video Link: https://drive.google.com/file/d/11R1kPfJhrx6Lbp1Qu_SARZUfvyhI3zWk/view?usp=drive_link
+Figma Walkthrough Link: https://drive.google.com/file/d/1KNA_tM_tJZyY55XPHCIIkC3XTlwNEWHg/view?usp=drive_link
 
